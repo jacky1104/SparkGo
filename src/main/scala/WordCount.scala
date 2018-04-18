@@ -6,7 +6,7 @@ object WordCount {
   def main(args: Array[String]) {
     val conf = new SparkConf().setMaster("local").setAppName("WordCount")
     val sc = new SparkContext(conf)
-    val textFile = sc.textFile("/Users/jacky/Codes/Scala/logs/***.log")
+    val textFile = sc.textFile("/Users/jacky/Codes/Spark/SparkGo/logs/tlog_20180417_152321.log")
     println(textFile.count())
    // val counts = textFile.filter(temp => temp.contains("vd=root")).filter(temp => temp.contains("subtype=\"forward\""))
           //.map(line => (line,1)).reduceByKey(_+_)
