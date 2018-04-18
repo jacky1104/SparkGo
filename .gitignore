@@ -25,4 +25,8 @@ hs_err_pid*
 
 #idea
 *.imi
-../.idea/*
+./.idea/*
+
+
+#target
+./target/*
